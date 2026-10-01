@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 5h</title>
+</head>
+<body>
+	<button onclick="
+		console.log(`Cart Quantity:${cartQ}`)
+		">Show Quantity</button>
+	<button  onclick="
+		cartQ+=1;
+		console.log(`Cart Quantity:${cartQ}`)
+	">Add to cart</button>
+	<button onclick="
+		cartQ+=+2;
+		console.log(`Cart Quantity:${cartQ}`)
+	">+2</button>
+	<button onclick="
+		cartQ+=3;
+		console.log(`Cart Quantity:${cartQ}`)
+	">+3</button>
+	<button onclick="
+		cartQ+=4;
+		console.log(`Cart Quantity:$${cartQ}`)
+	">+4</button>
+	<button onclick="
+		cartQ+=5;
+		console.log(`Cart Quantity:$${cartQ}`)
+	">+5</button>
+	<button onclick="
+		if (cartQuantity <= 0)
+		{
+            console.log('Not Enough Item In Cart');
+        }else
+		{
+			cartQ-=1;
+			console.log(`Cart Quantity:$${cartQ}`)
+		}
+	">Remove From Cart</button>
+	<button onclick="
+		if (cartQuantity <= 0)
+		{
+    	    console.log('Not Enough Item In Cart');
+    	}else
+		{
+		cartQ-=2;
+		console.log(`Cart Quantity:$${cartQ}`)
+		}
+	">-2</button>
+	<button onclick="
+		if (cartQuantity <= 0)
+		{
+            console.log('Not Enough Item In Cart');
+        }else
+		{
+		cartQ-=3;
+		console.log(`Cart Quantity:$${cartQ}`)
+		}
+	">-3</button>
+	<button onclick="
+		cartQ=0;
+		console.log(`Cart Was Reset`)
+		console.log(`Cart Quantity:${cartQ}`)
+	">Reset cart</button>
+
+	<script>
+		let cartQ=0;
+	</script>
+</body>
+</html>
